@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora';
+}
+:root{
+    --background: #3E2F5B;
+    --accent: #4A5899;
+    --secondary: #DDC8C4;
+    --thirty: #559CAD;
+    --text: #13070C;
+}
+
+main{
+    padding: 20px 64px;
+    background-color: var(--background);
+    color: #F4F4F4;
+}
+
+.section{
+    padding: 20px 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container{
+    background-color: var(--thirty);
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+    gap: 30px;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.ingreso-fijo, .ingreso-gastos{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+    .ingreso-fijo > label, .categoria-uno > label, .categoria-dos > label, .gastos-sueltos > label{
+        font-weight: bold;
+    }
+
+.buttons{
+    gap: 10px;
+    width: 67%;
+    display: flex;
+    flex-flow: column wrap;
+}
+    .buttons > button{
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+
+        color: #F4F4F4;
+        background-color: var(--accent);
+    }
+
+.gastos{
+    display: flex;
+}
+    .gastos-fijos{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .categoria-uno{
+        display: flex;
+        gap: 20px;
+    }
+    .categoria-dos{
+        display: flex;
+        gap: 26px;
+    }
+    .gastos-sueltos{
+        display: flex;
+        justify-content: space-between;
+    }
+    #gastosAzar{
+        height: 40%;
+    }
+    #gastosSeguros, #categoriasSeguros, #gastosAzar{
+        width: 50%;
+    }
+
+.container--resumenGastos{
+    margin: 20px 64px;
+    border: solid 2px var(--accent);
+}
+.container--resumenGastos, .datos{
+    padding: 20px 64px;
+}
+.datos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+table{
+  border-collapse: collapse;
+  display: flex;
+}
+td, th{
+    border: solid 1px #e2e2e2;
+    padding: 20px;
+}
+.total{
+    background-color: var(--accent);
+    color: #F4F4F4;
+}
+
+.left-right{
+    display: flex;
+    align-items: flex-start;
+}

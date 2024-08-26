@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pre entrega JavaScript</title>
+        <link rel="stylesheet" href="source/style.css">
+    </head>
+    <body>
+        <main>
+            <h1>PRESUPUESTO PERSONAL</h1>
+        </main>
+        <section class="left-right">
+            <div class="left">
+                <section class="section">
+                    <div class="container">
+                        <div class="ingreso-fijo">
+                            <label>Ingreso fijo</label>
+                            <input type="number" id="Ingreso">
+                        </div>
+                        <div class="buttons">
+                            <button id="calcularPresupuesto">Comenzar a calcular presupuesto &#128522;</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="section resumen">
+                    <div class="container">
+                        <div class="ingresos--gastos gastos">
+                            <div class="gastos-fijos">
+                                <div class="categoria-uno">
+                                    <label>Gastos fijos</label>
+                                    <input type="number" id="gastosSeguros">
+                                </div>
+                                <div class="categoria-dos">
+                                    <label>Categorías</label>
+                                    <select name="categorias" id="categoriasSeguros">
+                                        <option value="-">-</option>
+                                        <option value="Hogar">Hogar</option>
+                                        <option value="Expensas">Expensas</option>
+                                        <option value="Ahorro">Ahorro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="gastos-sueltos">
+                                <label>Gastos sueltos</label>
+                                <input type="number" id="gastosAzar">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button id="agregarGastos">Agregar gastos</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="right">
+                <div class="container--resumenGastos">
+                    <h1>Resumen de gastos:</h1>
+                    <div id="resumenGastos"></div>
+                </div>
+                <section class="datos">
+                    <table>
+                        <tr>
+                            <td>Ingresos fijos</td>
+                            <td>Total gastos</td>
+                            <td class="total">Quedan</td>
+                        </tr>
+                        <tr>
+                            <td id="ingreso"></td>
+                            <td id="ingresoGastado"></td>
+                            <td id="quedanIngresos"></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </body>
+    <script src="js/script.js"></script>
+</html>
